@@ -49,10 +49,21 @@ compile <span class="pl-s"><span class="pl-pds">"</span>com.android.support:supp
 <h2>
 <a id="rxjava" class="anchor" href="#rxjava" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RxJava</h2>
 
-<p>Because RxAndroid releases are few and far between, it is recommended you also explicitly depend on RxJava's latest version for bug fixes and new features.</p>
+<p>RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM.</p>
 
-<div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">"</span>io.reactivex:rxandroid:<span class="pl-smi">$r<span class="pl-smi">xjava_version</span></span><span class="pl-pds">"</span></span>
-compile <span class="pl-s"><span class="pl-pds">"</span>io.reactivex:rxjava:<span class="pl-smi">$r<span class="pl-smi">xjava_version</span></span><span class="pl-pds">"</span></span></pre></div>
+<ul>
+<li>
+<a href="http://rxmarbles.com/">RxMarbles</a>: Interactive diagrams of Rx Observables</li>
+</ul>
+
+<div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>io.reactivex:rxandroid:1.1.0<span class="pl-pds">'</span></span>
+<span class="pl-c">// Because RxAndroid releases are few and far between, it is recommended you also</span>
+<span class="pl-c">// explicitly depend on RxJava's latest version for bug fixes and new features.</span>
+compile <span class="pl-s"><span class="pl-pds">'</span>io.reactivex:rxjava:1.1.0<span class="pl-pds">'</span></span></pre></div>
+
+<p><a href="https://github.com/ReactiveX/RxJava">https://github.com/ReactiveX/RxJava</a></p>
+
+<p><a href="https://github.com/ReactiveX/RxAndroid">https://github.com/ReactiveX/RxAndroid</a></p>
 
 <h2>
 <a id="rxbinding" class="anchor" href="#rxbinding" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RxBinding</h2>
@@ -64,18 +75,24 @@ compile <span class="pl-s"><span class="pl-pds">"</span>com.jakewharton.rxbindin
 compile <span class="pl-s"><span class="pl-pds">"</span>com.jakewharton.rxbinding:rxbinding-recyclerview-v7:<span class="pl-smi">$r<span class="pl-smi">xbinding_version</span></span><span class="pl-pds">"</span></span></pre></div>
 
 <h2>
-<a id="butterknife" class="anchor" href="#butterknife" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Butterknife</h2>
+<a id="butter-knife" class="anchor" href="#butter-knife" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Butter Knife</h2>
 
-<p>Repo: <a href="http://jakewharton.github.io/butterknife/">http://jakewharton.github.io/butterknife/</a></p>
+<p>Field and method binding for Android views</p>
 
 <div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>com.jakewharton:butterknife:7.0.1<span class="pl-pds">'</span></span></pre></div>
+
+<p><a href="http://jakewharton.github.io/butterknife/">http://jakewharton.github.io/butterknife/</a></p>
 
 <h2>
 <a id="dagger-2" class="anchor" href="#dagger-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dagger 2</h2>
 
+<p>Dagger ‡ A fast dependency injector for Android and Java.</p>
+
 <div class="highlight highlight-source-groovy-gradle"><pre>apt <span class="pl-s"><span class="pl-pds">'</span>com.google.dagger:dagger-compiler:2.1<span class="pl-pds">'</span></span>
 compile <span class="pl-s"><span class="pl-pds">'</span>com.google.dagger:dagger:2.1<span class="pl-pds">'</span></span>
 provided <span class="pl-s"><span class="pl-pds">'</span>javax.annotation:jsr250-api:1.0<span class="pl-pds">'</span></span></pre></div>
+
+<p><a href="http://google.github.io/dagger/">http://google.github.io/dagger/</a></p>
 
 <h2>
 <a id="autovalue" class="anchor" href="#autovalue" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AutoValue</h2>
@@ -86,8 +103,6 @@ compile <span class="pl-s"><span class="pl-pds">'</span>javax.annotation:javax.a
 <h2>
 <a id="leakcanary" class="anchor" href="#leakcanary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LeakCanary</h2>
 
-<p>Repo: <a href="https://github.com/square/leakcanary">https://github.com/square/leakcanary</a></p>
-
 <p>A memory leak detection library for Android and Java.</p>
 
 <p><em>“A small leak will sink a great ship.”</em> - Benjamin Franklin</p>
@@ -96,12 +111,16 @@ compile <span class="pl-s"><span class="pl-pds">'</span>javax.annotation:javax.a
 releaseCompile <span class="pl-s"><span class="pl-pds">'</span>com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2<span class="pl-pds">'</span></span>
 testCompile <span class="pl-s"><span class="pl-pds">'</span>com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2<span class="pl-pds">'</span></span></pre></div>
 
+<p><a href="https://github.com/square/leakcanary">https://github.com/square/leakcanary</a></p>
+
 <h2>
 <a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
 
 <div class="highlight highlight-source-groovy-gradle"><pre>testCompile <span class="pl-s"><span class="pl-pds">'</span>junit:junit:4.12<span class="pl-pds">'</span></span>
 testCompile <span class="pl-s"><span class="pl-pds">"</span>org.robolectric:robolectric:3.0<span class="pl-pds">"</span></span>
 testCompile <span class="pl-s"><span class="pl-pds">'</span>com.squareup.assertj:assertj-android:1.1.1<span class="pl-pds">'</span></span></pre></div>
+
+<p>(<a href="https://jbt.github.io/markdown-editor">https://jbt.github.io/markdown-editor</a>)</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/DawidvanGraan/SampleTestApp1">Sample Test App</a> is maintained by <a href="https://github.com/DawidvanGraan">DawidvanGraan</a>.</span>
