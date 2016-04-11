@@ -1,9 +1,10 @@
-package za.co.polymorph.rxsampleapp.utils.modules;
+package za.co.polymorph.rxsampleapp.di.components;
 
 import javax.inject.Singleton;
 
 import dagger.Component;
 import za.co.polymorph.rxsampleapp.app.activity.MainActivity;
+import za.co.polymorph.rxsampleapp.utils.modules.PrefsModule;
 
 @Singleton
 @Component(modules={PrefsModule.class})

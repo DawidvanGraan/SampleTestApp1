@@ -5,7 +5,7 @@ import android.os.StrictMode;
 
 import com.squareup.leakcanary.LeakCanary;
 
-import za.co.polymorph.rxsampleapp.utils.modules.AppComponent;
+import za.co.polymorph.rxsampleapp.di.components.AppComponent;
 import za.co.polymorph.rxsampleapp.utils.modules.DaggerAppComponent;
 import za.co.polymorph.rxsampleapp.utils.modules.PrefsModule;
 
