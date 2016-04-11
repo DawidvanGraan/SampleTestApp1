@@ -66,18 +66,18 @@ public class MainActivity extends AppCompatActivity {
         mCompositeSubscription.add(sub1);
 
         // Example Crash
-        Observable.empty()
-                .first()
-                .subscribe(o -> {
-                    // onNext
-                }, crashOnError());
+//        Observable.empty()
+//                .first()
+//                .subscribe(o -> {
+//                    // onNext
+//                }, crashOnError());
 
         // Example Crash
-        Observable.empty()
-                .first()
-                .subscribe(o -> {
-                    // onNext
-                });
+//        Observable.empty()
+//                .first()
+//                .subscribe(o -> {
+//                    // onNext
+//                });
     }
 
     @Override
