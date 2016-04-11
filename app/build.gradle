@@ -147,7 +147,7 @@ dependencies {
     // compile 'net.hockeyapp.android:HockeySDK:3.6.2'
     //
     // RxLint
-    compile 'nl.littlerobots.rxlint:rxlint:1.0'
+    // compile 'nl.littlerobots.rxlint:rxlint:1.0'
     //
     // RetroFit
     compile 'com.google.code.gson:gson:2.6.2'
