@@ -15,11 +15,7 @@ buildscript {
         classpath "me.tatarka:gradle-retrolambda:$retrolambda_version"
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath 'com.stanfy.spoon:spoon-gradle-plugin:1.0.4'
-        classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2'
     }
-
-    // Exclude the version that the android plugin depends on.
-    configurations.classpath.exclude group: 'com.android.tools.external.lombok'
 }
 
 apply plugin: 'com.android.application'
