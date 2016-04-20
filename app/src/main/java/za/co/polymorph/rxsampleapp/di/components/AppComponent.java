@@ -4,7 +4,7 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 import za.co.polymorph.rxsampleapp.app.activity.MainActivity;
-import za.co.polymorph.rxsampleapp.utils.modules.PrefsModule;
+import za.co.polymorph.rxsampleapp.di.modules.PrefsModule;
 
 @Singleton
 @Component(modules={PrefsModule.class})

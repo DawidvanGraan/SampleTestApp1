@@ -1,4 +1,4 @@
-package za.co.polymorph.rxsampleapp.utils.modules;
+package za.co.polymorph.rxsampleapp.di.modules;
 
 import android.content.Context;
 

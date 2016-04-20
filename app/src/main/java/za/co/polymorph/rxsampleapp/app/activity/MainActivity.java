@@ -12,7 +12,6 @@ import javax.inject.Inject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import rx.Observable;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.exceptions.OnErrorNotImplementedException;
@@ -47,14 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Butterknife bind view
         ButterKnife.bind(this);
-
-//        Observable.interval(1, TimeUnit.SECONDS)
-//                .subscribe(new Action1<Long>() {
-//                    @Override
-//                    public void call(Long aLong) {
-//                        Log.d("tag", aLong.toString());
-//                    }
-//                });
 
         // Attach a click event
         Subscription sub1 = RxView.clicks(btnHello)
