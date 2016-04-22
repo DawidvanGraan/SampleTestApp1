@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.tvHello)
     TextView tvHello;
 
-    @Inject
-    AppPreferences prefs;
+//    @Inject
+//    AppPreferences prefs;
 
     private CompositeSubscription mCompositeSubscription = new CompositeSubscription();
 

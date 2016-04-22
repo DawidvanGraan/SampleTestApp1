@@ -61,6 +61,7 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
             signingConfig signingConfigs.debug
             minifyEnabled false
         }
@@ -155,6 +156,11 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+    //
+    //
+    // Stetho
+    compile 'com.facebook.stetho:stetho:1.3.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
 }
 
 task loadDebugKeys << {

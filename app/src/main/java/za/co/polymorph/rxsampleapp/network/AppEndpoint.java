@@ -1,4 +1,4 @@
-package za.co.polymorph.rxsampleapp.utils.modules.api;
+package za.co.polymorph.rxsampleapp.network;
 
 import retrofit2.http.GET;
 import rx.Observable;
