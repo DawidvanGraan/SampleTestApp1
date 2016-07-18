@@ -92,3 +92,5 @@ testCompile 'com.squareup.assertj:assertj-android:1.1.1'
 ```
 
 (https://jbt.github.io/markdown-editor)
+
+http://dawidvangraan.github.io/SampleTestApp1/
